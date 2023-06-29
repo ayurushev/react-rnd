@@ -24,21 +24,21 @@
     "test": "cross-env NODE_ENV='test' npm run tsc && avaron lib/index.test.js --renderer",
     "copy:flow": "cpy src/index.js.flow lib && cpy src/index.js.flow lib --rename index.es5.js.flow",
     "test:ci": "npm run flow && npm run build",
-    "prepare": "npm run build",
+    "prepublish": "npm run build",
     "storybook": "start-storybook -p 6016",
     "build-storybook": "build-storybook -o docs/stories",
     "deploy": "npm run build-storybook && gh-pages -d docs"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bokuweb/react-rnd.git"
+    "url": "https://github.com/ayurushev/react-rnd.git"
   },
   "author": "bokuweb",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bokuweb/react-rnd/issues"
+    "url": "https://github.com/ayurushev/react-rnd/issues"
   },
-  "homepage": "https://github.com/bokuweb/react-rnd",
+  "homepage": "https://github.com/ayurushev/react-rnd",
   "devDependencies": {
     "@babel/cli": "7.17.6",
     "@babel/core": "7.17.5",
